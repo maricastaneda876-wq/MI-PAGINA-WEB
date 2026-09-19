@@ -1,0 +1,252 @@
+h1{
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+}
+
+.texto {
+    width: 50%;
+}
+
+.texto h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.presentacion img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Schoolbell', cursive;
+    background: linear-gradient(135deg, #fff4f8, #f3edff);
+    color: #3d2940;
+}
+
+/* Contenedor principal */
+.presentacion {
+    .presentacion {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 50px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 35px;
+    border: 3px solid #f3d5e5;
+    box-shadow: 0 15px 40px rgba(170, 120, 160, 0.18);
+}
+
+/* TEXTO */
+.texto {
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+/* IMÁGENES */
+.imagenes {
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagenes img {
+    width: 210px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+    border: 5px solid #e6c9eb;
+
+    box-shadow: 0 8px 20px rgba(150, 100, 160, 0.2);
+}
+
+}
+
+/* Texto */
+.texto {
+    flex: 1;
+}
+
+/* Títulos */
+h1 {
+    font-family: 'Chewy', cursive;
+    font-size: 50px;
+    color: #c45b91;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0 #f8dce9;
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    font-size: 35px;
+    color: #8064b8;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+/* Párrafos */
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #49394c;
+}
+
+/* Lista */
+ul {
+    padding: 20px 25px;
+    background: #fff5fa;
+    border-radius: 20px;
+    border-left: 6px solid #d991b6;
+    box-shadow: 0 5px 15px rgba(180, 120, 160, 0.10);
+}
+
+li {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #4b3a50;
+}
+
+/* Imagen */
+.presentacion img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    border: 8px solid white;
+    margin-bottom: 50px;
+    box-shadow: 
+        0 12px 30px rgba(130, 90, 150, 0.25),
+        0 0 0 4px #ead8f4;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por la imagen */
+.presentacion img:hover {
+    transform: scale(1.03) rotate(1deg);
+
+    box-shadow:
+        0 18px 40px rgba(130, 90, 150, 0.30),
+        0 0 0 5px #d9c4ed;
+}
+
+
+/* Efecto en los títulos */
+h1:hover,
+h2:hover {
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+/* Adaptación para celular */
+@media (max-width: 800px) {
+
+    .presentacion {
+        flex-direction: column;
+        width: 80%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .presentacion img {
+        width: 80%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    ul {
+        text-align: left;
+    }
+}
+.contacto {
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto 50px;
+    margin-top: -100px;
+    padding: 35px;
+
+    text-align: center;
+
+    background: #fff5fa;
+    border: 3px solid #f3d5e5;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(170, 120, 160, 0.15);
+}
+
+.contacto h1 {
+    margin-bottom: 15px;
+}
+
+.datos-contacto {
+    margin-top: 20px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.datos-contacto p {
+    margin: 0;
+    padding: 12px 20px;
+
+    background: white;
+    border-radius: 15px;
+    border: 2px solid #e6c9eb;
+}
+
+
